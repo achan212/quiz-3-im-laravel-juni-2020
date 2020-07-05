@@ -33,7 +33,7 @@ class ArtikelController extends Controller
 
     public function edit($id){
         $artikel=ArtikelModel::find_by_id($id);
-        return view('artikel.edit',compact('artikel'));
+        return view('edit',compact('artikel'));
     }
 
     public function update($id,Request $request){
